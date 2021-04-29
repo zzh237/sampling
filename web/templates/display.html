@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
+</head>
+<body>
+    <h1>Images Aligned Side by Side example</h1>
+    <div class="alignRow">
+        <div class="imageColumn">
+        <img src="{{url_for('send_image', filename=image_name)}}" alt="Snow" style="width:100%">
+        </div>
+        <div class="imageColumn">
+        <img src="{{url_for('send_image', filename=image_name)}}" alt="Forest" style="width:100%">
+        </div>
+        <div class="imageColumn">
+        <img src="{{url_for('static', filename='IMG_1222.jpg')}}" alt="Mountains" style="width:100%">
+        </div>
+        <div class="imageColumn">
+        <img src="{{url_for('static', filename='IMG_1222.jpg')}}" alt="Snow" style="width:100%">
+        </div>
+        </div>>
+</body>
+</html>
